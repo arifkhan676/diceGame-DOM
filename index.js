@@ -1,3 +1,39 @@
+/* My Code */
+
+var randomNum = Math.floor(Math.random()*6)+1;
+
+var img = document.getElementById("img1");
+
+img.src="images/dice"+randomNum+".png";
+
+//console.log(img);
+
+var randomNum2 = Math.floor(Math.random()*6)+1;
+
+var img2 = document.getElementById("img2");
+
+img2.src="images/dice"+randomNum2+".png";
+
+//console.log(img2);
+var win = document.getElementById("h1");
+
+if(randomNum>randomNum2){
+    win.innerHTML = "Player 1 is won";
+}else if(randomNum<randomNum2){
+    win.innerHTML = "Player 2 is won";
+}else{
+
+    win.innerHTML = "Draw";
+}
+
+
+
+
+
+
+
+/* Angela Yu's code
+
 var random1 = Math.floor(Math.random()*6+1); 
 
 var randomImage1="images/dice" +random1+".png"; //set variable for taking image to dice
@@ -25,3 +61,5 @@ else if(random2>random1){
 }else{
     document.querySelector("h1").innerHTML="Draw!!";
 }
+
+*/
